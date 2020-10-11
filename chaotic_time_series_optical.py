@@ -8,7 +8,9 @@ Created on Wed Jun 19 17:19:44 2019
 import collections
 import numpy as np
 
-
+""""""""""""""""""""""
+Mackey-Glass quation
+""""""""""""""""""""""
 def mackey_glass(sample_len=1000, tau=17, seed=None, n_samples = 1):
     '''
     mackey_glass(sample_len=1000, tau=17, seed = None, n_samples = 1) -> input
@@ -65,7 +67,9 @@ def mso(sample_len=1000, n_samples = 1):
         signals.append(np.sin(0.2 * x + phase) + np.sin(0.311 * x + phase))
     return signals
 
-
+""""""""""""""""""""""""""""
+Lorenz equation
+""""""""""""""""""""""""""""
 def lorentz(sample_len=1000, sigma=10, rho=28, beta=8 / 3, step=0.01):
     """This function generates a Lorentz time series of length sample_len,
     with standard parameters sigma, rho and beta. 
